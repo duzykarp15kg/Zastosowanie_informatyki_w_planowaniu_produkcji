@@ -1,0 +1,8 @@
+zeby uruchomic wykonaj po kolei te rzeczy
+
+g++ -O2 -std=c++17 -o solver solver.cpp
+python gen_instance.py 100 20 1 inst.txt      # n m seed plik
+python gui.py                                 # tkinter, bez dodatkowych pakietów
+./solver inst.txt wynik.txt sa iters=300000   # solver można też wołać ręcznie
+
+i w sumie tyle powinno banglac
